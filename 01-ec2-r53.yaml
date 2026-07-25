@@ -7,8 +7,8 @@
     zone_id: "Z05714843SO1YQWMF1N5N" 
     domain_name: "pramod.shop"
     instances:
-    - shipping
-    - rabbitmq
+    - payment
+    - frontend
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
