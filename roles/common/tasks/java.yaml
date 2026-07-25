@@ -9,7 +9,7 @@
 - name: install dependencies
   ansible.builtin.command: mvn clean package
   args:
-    chdir: /app/{{ component }}
+    chdir: /app
 
 - name: move jar file
   ansible.builtin.command: mv target/{{ component }}-{{ version }}.jar {{ component }}.jar
