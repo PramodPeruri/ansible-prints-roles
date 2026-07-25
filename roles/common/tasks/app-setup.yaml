@@ -24,7 +24,7 @@
 
 - name: download {{ component }} application
   ansible.builtin.get_url:
-    url: https://3dprints-artifacts.s3.us-east-1.amazonaws.com/{{ component }}.zip
+    url: https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip
     dest: /tmp/{{ component }}.zip
 
 - name: extract {{ component }} application
