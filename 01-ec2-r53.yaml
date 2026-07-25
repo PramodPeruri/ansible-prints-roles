@@ -7,8 +7,8 @@
     zone_id: "Z05714843SO1YQWMF1N5N" 
     domain_name: "pramod.shop"
     instances:
-    - redis
-    - user
+    - cart
+    - mysql
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
